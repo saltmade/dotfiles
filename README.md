@@ -9,7 +9,7 @@ I use a modded version of Operator Mono that I call Operator Code. To get the sa
 - Why ScreenSmart? It's meant for rendering screen sizes, unlike Multipurpose and Office which are tuned differently.
 - Why pay? Because creating good fonts is hard and takes a long time. If you're here you're somebody who appreciates the work that goes into making something both functional and beautiful. You could always just use an open source font instead. Fira Code is [already patched this way](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/FiraCode).
 
-2. [Ligaturize](https://github.com/ToxicFrog/Ligaturizer) in the dev ligatures. You'll need font-forge for these mods (see the Ligaturizer README)
+2. [Add in the dev ligatures](https://github.com/kiliman/operator-mono-lig). You could also [Ligaturize](https://github.com/ToxicFrog/Ligaturizer) it, but I haven't tried that method as the above is more specifically Operator-esque. You'll need font-forge for this mod and the following Nerd Fonts patcher (see the Ligaturizer README)
 
 3. Download and apply the [Nerd Font patcher](https://github.com/ryanoasis/nerd-fonts#option-8-patch-your-own-font) to get many snazzy icons in your editor.
 
