@@ -11,6 +11,8 @@ I use a modded version of Operator Mono that I call Operator Code. To get the sa
 
 2. [Add in the dev ligatures](https://github.com/kiliman/operator-mono-lig). You could also [Ligaturize](https://github.com/ToxicFrog/Ligaturizer) it, but I haven't tried that method as the above is more specifically Operator-esque. You'll need font-forge for this mod and the following Nerd Fonts patcher (see the Ligaturizer README)
 
-3. Download and apply the [Nerd Font patcher](https://github.com/ryanoasis/nerd-fonts#option-8-patch-your-own-font) to get many snazzy icons in your editor.
+3. Download and apply the [Nerd Font patcher](https://github.com/ryanoasis/nerd-fonts#option-8-patch-your-own-font) to get many snazzy icons in your editor. !! Don't forget to use the `--careful` flag lest you overwrite some of your characters
 
-4. Make sure ligatures are turned on in your editor/terminal emulator
+4. [Rename your fonts using fonttools](http://www.fontgeek.net/blog/?p=343)
+
+5. Make sure ligatures are turned on in your editor/terminal emulator
