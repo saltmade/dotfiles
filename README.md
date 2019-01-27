@@ -13,6 +13,6 @@ I use a modded version of Operator Mono that I call Operator Code. To get the sa
 
 3. [Rename your fonts using fonttools](http://www.fontgeek.net/blog/?p=343). It's important you get your name in before using the Nerd Font patcher as attempting to change it after will result in conflicts between glyphs.
 
-4. Download and apply the [Nerd Font patcher](https://github.com/ryanoasis/nerd-fonts#option-8-patch-your-own-font) to get many snazzy icons in your editor. I modify the `patch-fonts` script to ignore adding information to font name.
+4. Download and apply the [Nerd Font patcher](https://github.com/ryanoasis/nerd-fonts#option-8-patch-your-own-font) to get many snazzy icons in your editor. I modify the `patch-fonts` script to ignore adding information to font name. Use `find . -name "OperatorCode*.otf" -exec ./font-patcher -c --careful {} \;` to do the hard work.
 
 5. Make sure ligatures are turned on in your editor/terminal emulator and apply.
