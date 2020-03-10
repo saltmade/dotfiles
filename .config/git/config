@@ -1,0 +1,16 @@
+[user]
+	name = Jeff Heaton
+	email = jeff@jgheaton.com
+[color]
+	ui = auto
+	diff = auto
+	status = auto
+[push]
+	default = simple
+[github]
+	user = jefheaton
+[commit]
+	verbose = true
+[core]
+	editor = vim
+
