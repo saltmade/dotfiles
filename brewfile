@@ -1,6 +1,7 @@
 tap "homebrew/cask"
 tap "homebrew/cask-drivers"
 tap "homebrew/cask-versions"
+brew "bat"
 brew "git"
 brew "htop"
 brew "mas"
