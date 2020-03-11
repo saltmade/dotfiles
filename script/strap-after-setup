@@ -1,0 +1,11 @@
+#!/bin/sh
+# Bootstrap a Salt system
+
+# Set shell
+chsh -s /usr/local/bin/zsh
+
+# setup ssh
+
+# sync firefox
+
+# sync alfred through dropbox

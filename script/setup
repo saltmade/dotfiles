@@ -1,0 +1,6 @@
+#!/bin/sh
+# Bootstrap a Salt system
+
+# Install NVM + Node
+
+#
