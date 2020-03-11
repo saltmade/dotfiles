@@ -24,6 +24,7 @@ cask "mailmate"
 cask "moom"
 cask "sketch"
 cask "spotify"
+cask "visual-studio-code"
 cask "homebrew/cask-drivers/logitech-options"
 cask "homebrew/cask-versions/google-chrome-dev"
 mas "Amphetamine", id: 937984704
