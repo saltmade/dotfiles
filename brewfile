@@ -18,8 +18,8 @@ cask "amethyst"
 cask "anki"
 cask "appcleaner"
 cask "bartender"
+cask "brave-browser-dev"
 cask "dropbox"
-cask "firefox-developer-edition"
 # using istat as cask to get all features
 cask "istat-menus"
 cask "kitty"
@@ -28,7 +28,6 @@ cask "sketch"
 cask "spotify"
 cask "visual-studio-code"
 cask "homebrew/cask-drivers/logitech-options"
-cask "homebrew/cask-versions/google-chrome-dev"
 mas "Amphetamine", id: 937984704
 mas "Things", id: 904280696
 mas "Fantastical", id: 975937182
