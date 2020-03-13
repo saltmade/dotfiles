@@ -1,6 +1,9 @@
 # dotfiles
 (•_•) ( •_•)>⌐■-■ (⌐■_■)
 
+## ZSH
+- I like to export certain env variables in the system zshenv file `/etc/zshenv` so they apply to all zshells, even if they don't load ~/.zshenv
+
 ## Font
 I use a modded version of Operator Mono that I call Operator Code. To get the same:
 
