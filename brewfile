@@ -19,6 +19,7 @@ cask "anki"
 cask "appcleaner"
 cask "bartender"
 cask "brave-browser-dev"
+cask "dash"
 cask "dropbox"
 # using istat as cask to get all features
 cask "istat-menus"
