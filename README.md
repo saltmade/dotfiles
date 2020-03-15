@@ -3,6 +3,12 @@
 
 ## ZSH
 - I like to export certain env variables in the system zshenv file `/etc/zshenv` so they apply to all zshells, even if they don't load ~/.zshenv
+  - You'll need to install my fork of prezto, and move it into `.config/zsh/.zprezto` to get the path right
+  - My scripts currently assume a user of `jheaton`
+- Additionally, some modules won't come along with prezto (TODO:: Fix this)
+ - install its submodules https://github.com/sorin-ionescu/prezto#updating
+ - and the contrib files https://github.com/belak/prezto-contrib#usage
+ 
 
 ## Font
 I use a modded version of Operator Mono that I call Operator Code. To get the same:
