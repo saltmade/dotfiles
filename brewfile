@@ -3,6 +3,8 @@ tap "homebrew/cask-drivers"
 tap "homebrew/cask-versions"
 brew "bat"
 brew "coreutils"
+# TODO Add completions for fzf
+brew "fzf"
 brew "git"
 brew "htop"
 brew "mas"
