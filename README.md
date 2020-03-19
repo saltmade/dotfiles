@@ -9,6 +9,10 @@
  - install its submodules https://github.com/sorin-ionescu/prezto#updating
  - and the contrib files https://github.com/belak/prezto-contrib#usage
  
+## CLI Tools
+- ag :: Aka the silver searcher, for searching through files
+- fzf :: Pipe in text input for a live updating CLI interface 
+I have to write this out because I always forget why I need both and in what situations. E.g. "I need to find this bit of text in the code base" -> ag VS. "I need to find this file in a list of files" -> fzf. Amongst other things of course
 
 ## Font
 I use a modded version of Operator Mono that I call Operator Code. To get the same:
