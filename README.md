@@ -12,7 +12,10 @@
 ## CLI Tools
 - ripgrep :: for searching through files, can be combined with sed for [search and replace](https://github.com/BurntSushi/ripgrep/blob/master/FAQ.md#how-can-i-search-and-replace-with-ripgrep)
 - fzf :: Pipe in text input for a live updating CLI interface 
-I have to write this out because I always forget why I need both and in what situations. E.g. "I need to find this bit of text in the code base" -> ag VS. "I need to find this file in a list of files" -> fzf. Amongst other things of course
+I have to write this out because I always forget why I need both and in what situations. E.g. "I need to find this bit of text in the code base" -> rg VS. "I need to find this file in a list of files" -> fzf. Amongst other things of course.
+
+Of note, ripgrep is case sensitive by default, where ag is not. You'll want `-S` or a config file [probably](https://github.com/BurntSushi/ripgrep/blob/master/GUIDE.md#common-options)
+
 
 ## Font
 I use a modded version of Operator Mono that I call Operator Code. To get the same:
