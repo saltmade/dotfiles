@@ -5,6 +5,7 @@ brew "bat"
 brew "coreutils"
 # TODO Add completions for fzf
 brew "fzf"
+brew "gawk"
 brew "git"
 brew "gnu-sed"
 brew "htop"
