@@ -30,9 +30,11 @@ cask "paragon-extfs"
 cask "firefox"
 cask "istat-menus" # using istat as cask to get all features
 cask "kitty"
+cask "logitech-options"
 cask "protonmail-bridge"
 cask "sketch"
 cask "spotify"
-cask "homebrew/cask-drivers/logitech-options"
+mas "1Blocker", id: 1365531024
 mas "Fantastical", id: 975937182
 mas "Numbers", id: 409203825
+mas "Vimari", id: 1480933944
