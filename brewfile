@@ -25,6 +25,7 @@ cask "appcleaner"
 cask "bartender"
 cask "cardhop"
 cask "dash"
+cask "divvy"
 cask "paragon-extfs"
 cask "firefox"
 cask "istat-menus" # using istat as cask to get all features
