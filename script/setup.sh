@@ -1,6 +1,6 @@
 #!/bin/sh
 # Bootstrap a Salt system
-# /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+# /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/saltdotac/dotfiles/master/script/setup)"
 
 # ref: https://askubuntu.com/a/30157/8698
 if ! [ $(id -u) = 0 ]; then
