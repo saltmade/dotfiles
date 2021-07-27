@@ -3,9 +3,7 @@
 # /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/saltdotac/dotfiles/master/script/setup)"
 
 echo "Bootstrapping a Salt system..."
-echo "First a few requests:"
-read -p 'Github token: ' gh_token
-read -p 'Work Name: ' work_name
+echo "First, setup homebrew"
 
 # Install homebrew first (gets the CLI tools for free)
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -21,23 +19,34 @@ git pull origin master
 # Install brewfile
 brew bundle
 
-# Setup ssh
+# Setup github ssh
 ssh-keygen -o -a 100 -t ed25519 -f ~/.ssh/github_ed25519 -C "aloha@salt.ac"
-gh auth login --with-token gh_token
-gh ssh-key add github_ed25519 -t work_name
-
-# Install NVM and node
+mv ~/ssh_config ~/.ssh/config
+ssh-add -K ~/.ssh/github_ed25519
+gh auth login --with-token
 
 # Get prezto
 cd ~/.config
 git clone git@github.com:saltdotac/prezto.git
 zprezto-update
 
-# Get my preferred font
+# Install NVM
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
 
-# TODO Automate changing Capslock to Cntl
+# Get my preferred font
+git clone git@github.com:saltdotac/operatorcode.git
+cp -a operatorcode/. ~/Libary/Fonts/
+
+# Create folders
+cd ~
+mkdir Work
+mkdir Projects
+
+# TODO Preferences
+# Automate changing Capslock to Cntl
 # Hiding and magnifing dock
 # Hot corners
+# Desktop bg
 
 echo "
                                                                                 
