@@ -35,7 +35,15 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
 
 # Get my preferred font
 git clone git@github.com:saltdotac/operatorcode.git
-cp -a operatorcode/. ~/Libary/Fonts/
+rm -rf operatorcode/.git
+rm operatorcode/README.md
+find . -name "*.ttx" -type f -delete
+cp -a operatorcode/. ~/Library/Fonts/
+rm -rf operatorcode
+
+# Set nvim settings
+cd ~/.config/
+git clone git@github.com:saltdotac/nvim.git
 
 # Create folders
 cd ~
