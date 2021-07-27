@@ -1,6 +1,6 @@
 [user]
 	name = Jeff Heaton
-	email = jeff@jgheaton.com
+	email = aloha@salt.ac
 [color]
 	ui = auto
 	diff = auto
@@ -8,9 +8,9 @@
 [push]
 	default = simple
 [github]
-	user = jefheaton
+	user = saltdotac
 [commit]
 	verbose = true
 [core]
-	editor = vim
+	editor = nvim
 
