@@ -2,27 +2,15 @@
 # Bootstrap a Salt system
 # /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/saltdotac/dotfiles/master/script/setup)"
 
-# ref: https://askubuntu.com/a/30157/8698
-if ! [ $(id -u) = 0 ]; then
-   echo "The script need to be run as root." >&2
-   exit 1
-fi
-
-if [ $SUDO_USER ]; then
-    real_user=$SUDO_USER
-else
-    real_user=$(whoami)
-fi
-
-# Commands that you don't want running as root would be invoked
-# with: sudo -u $real_user
-# So they will be run as the user who invoked the sudo command
-
 echo "Bootstrapping a Salt system..."
-
+echo "First a few requests:"
 read -p 'Github token: ' gh_token
+read -p 'Work Name: ' work_name
 
-# TODO automate installing CLI dev tools
+# Install homebrew first (gets the CLI tools for free)
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+echo "You can leave now and let the script do its thing..."
 
 # Get the dotfiles
 cd ~
@@ -31,17 +19,25 @@ git remote add origin https://github.com/saltdotac/dotfiles.git
 git pull origin master
 
 # Install brewfile
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 brew bundle
 
 # Setup ssh
 ssh-keygen -o -a 100 -t ed25519 -f ~/.ssh/github_ed25519 -C "aloha@salt.ac"
 gh auth login --with-token gh_token
-gh ssh-key add github_ed25519 -t 'nomnom'
+gh ssh-key add github_ed25519 -t work_name
 
-# Install NVM + Node
+# Install NVM and node
 
-# TODO Automate changing Capslock to Cntl (https://apple.stackexchange.com/questions/13598/updating-modifier-key-mappings-through-defaults-command-tool)
+# Get prezto
+cd ~/.config
+git clone git@github.com:saltdotac/prezto.git
+zprezto-update
+
+# Get my preferred font
+
+# TODO Automate changing Capslock to Cntl
+# Hiding and magnifing dock
+# Hot corners
 
 echo "
                                                                                 
