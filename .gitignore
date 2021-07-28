@@ -3,5 +3,8 @@
 !.gitignore
 
 !.config
+.config/nvim
+.config/nvm
+.config/zsh
 !brewfile
 !scripts
