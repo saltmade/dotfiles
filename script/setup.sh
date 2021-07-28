@@ -44,6 +44,7 @@ rm -rf operatorcode
 # Set nvim settings
 cd ~/.config/
 git clone git@github.com:saltdotac/nvim.git
+git clone https://github.com/k-takata/minpac.git ~/.config/nvim/pack/minpac/opt/minpac
 
 # Create folders
 cd ~
