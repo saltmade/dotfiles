@@ -1,16 +1,38 @@
 [user]
-	name = Jeff Heaton
-	email = aloha@salt.ac
+  name = Jeff Heaton
+  email = aloha@salt.ac
 [color]
-	ui = auto
-	diff = auto
-	status = auto
+  ui = auto
+  diff = auto
+  status = auto
 [push]
-	default = simple
+  default = simple
 [github]
-	user = saltdotac
+  user = saltdotac
 [commit]
-	verbose = true
+  verbose = true
 [core]
-	editor = nvim
+  editor = nvim
 
+[diff]
+  colorMoved = default
+
+[pager]
+  diff = delta
+  log = delta
+  reflog = delta
+  show = delta
+  branch = false
+
+[interactive]
+  diffFilter = delta --color-only
+
+[include]
+ path = /usr/local/bin/delta/themes.gitconfig
+
+[delta]
+  line-numbers = true
+  features = hoopoe
+
+[alias]
+  fixup = "!git log -n 50 --pretty=format:'%h %s' --no-merges | fzf | cut -c -7 | xargs -o git commit --fixup"

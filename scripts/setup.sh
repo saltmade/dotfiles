@@ -31,7 +31,7 @@ git clone git@github.com:saltdotac/prezto.git
 zprezto-update
 
 # Install NVM
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | bash
 
 # Get my preferred font
 git clone git@github.com:saltdotac/operatorcode.git
@@ -41,10 +41,8 @@ find . -name "*.ttx" -type f -delete
 cp -a operatorcode/. ~/Library/Fonts/
 rm -rf operatorcode
 
-# Set nvim settings
-cd ~/.config/
-git clone git@github.com:saltdotac/nvim.git
-git clone https://github.com/k-takata/minpac.git ~/.config/nvim/pack/minpac/opt/minpac
+# Get neovim-remote
+pip install neovim-remote
 
 # Create folders
 cd ~
@@ -53,9 +51,8 @@ mkdir Projects
 
 # TODO Preferences
 # Automate changing Capslock to Cntl
-# Hiding and magnifing dock
-# Hot corners
 # Desktop bg
+# Moving licenses into place
 
 echo "
                                                                                 

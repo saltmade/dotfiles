@@ -1,41 +1,41 @@
 tap "homebrew/cask"
-tap "homebrew/cask-drivers"
-tap "homebrew/cask-fonts"
-tap "homebrew/cask-versions"
 brew "bat"
 brew "coreutils"
-brew "exa"
 brew "fzf"
 brew "git"
 brew "gh"
+brew "git-delta"
 brew "gnu-sed"
 brew "htop"
+brew "httpie"
+brew "less" # for git-delta
+brew "lsd"
 brew "mas" # for installing mac app store apps
 brew "neovim"
-brew "pyenv"
+brew "pyenv" # remember to install python deps (see repo)
 brew "ripgrep"
 brew "tldr"
 brew "tree"
 brew "yarn"
 brew "zsh"
 cask "1password"
-cask "aerial" # screensaver
 cask "alfred"
 cask "anki"
 cask "appcleaner"
 cask "bartender"
-cask "cardhop"
+cask "cleanshot"
 cask "dash"
-cask "divvy"
-cask "paragon-extfs"
-cask "firefox"
+cask "docker"
+cask "firefox-developer-edition"
+cask "google-chrome"
 cask "istat-menus" # using istat as cask to get all features
-cask "kitty"
-cask "logitech-options"
-cask "protonmail-bridge"
-cask "sketch"
+cask "iterm2"
+cask "karabiner-elements"
+cask "paragon-extfs"
 cask "spotify"
 mas "1Blocker", id: 1365531024
+mas "Day One", id: 1055511498
+mas "Divvy", id: 413857545
 mas "Fantastical", id: 975937182
 mas "Numbers", id: 409203825
-mas "Vimari", id: 1480933944
+mas "Things", id: 904280696

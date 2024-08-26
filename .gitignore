@@ -3,8 +3,10 @@
 !.gitignore
 
 !.config
-.config/nvim
 .config/nvm
 .config/zsh
+.config/gcloud
+.config/tmux/plugins
+.config/nvim/lua/plugins
 !brewfile
 !scripts
